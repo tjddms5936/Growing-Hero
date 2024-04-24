@@ -1,0 +1,30 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
+#include "UMG_StatWindow.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class GROWINGHERO_API UUMG_StatWindow : public UUserWidget
+{
+	GENERATED_BODY()
+	
+public:
+	UUMG_StatWindow(const FObjectInitializer& ObjectInitializer); // 생성자
+	virtual void NativeOnInitialized() override; // 위젯이 생성될 때 딱 한 번 호출된다. 에디터 편집 시에도 생성될 때 호출된다
+	virtual void NativeConstruct() override; // AddToViewport 시 호출된다. NativeOnInitialized 와 달리, Viewport 에 Add 될 때마다 불린다!
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	class AMyCharacterController* m_pMyController;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	class AMyCharacter* m_pMyHero;
+
+public:
+	void init();
+};
