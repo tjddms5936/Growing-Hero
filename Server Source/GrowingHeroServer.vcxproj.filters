@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{3b33a6f8-1576-4434-976a-8ddf1c621e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{043b5cfc-d369-452d-8a8f-d868fdcf9d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session">
+      <UniqueIdentifier>{7e605647-6e18-4789-9cea-6ec76171450d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{2296cad5-4155-45b5-9631-773e54303df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room&amp;Player">
+      <UniqueIdentifier>{e69582ba-8368-4535-835a-4995f5754c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room&amp;Player\Room">
+      <UniqueIdentifier>{3b4a33f7-3c36-4735-b8a0-00601f529eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room&amp;Player\Player">
+      <UniqueIdentifier>{73714e0c-3a6f-43fc-aeb9-b5dfffbdba19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GrowingHeroServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildSessionMGR.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPacketHandler.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketProcessor.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonRoom.cpp">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomBase.cpp">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMGR.cpp">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="VilageRoom.cpp">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitBase.cpp">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enum.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Struct.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildSessionMGR.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPacketHandler.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketProcessor.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonRoom.h">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomBase.h">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMGR.h">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="VilageRoom.h">
+      <Filter>Room&amp;Player\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitBase.h">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Room&amp;Player\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Etc\protobuf\bin\Enum.proto">
+      <Filter>Protocol</Filter>
+    </None>
+    <None Include="..\Etc\protobuf\bin\Protocol.proto">
+      <Filter>Protocol</Filter>
+    </None>
+    <None Include="..\Etc\protobuf\bin\Struct.proto">
+      <Filter>Protocol</Filter>
+    </None>
+    <None Include="..\Etc\protobuf\bin\GenPackets.bat">
+      <Filter>Protocol</Filter>
+    </None>
+  </ItemGroup>
+</Project>

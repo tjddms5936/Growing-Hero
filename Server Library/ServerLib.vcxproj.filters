@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4393b106-9873-486f-8641-bd1ce3eb40a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Iocp">
+      <UniqueIdentifier>{b639075a-6aac-4f86-99cd-f74f9518bd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buffer">
+      <UniqueIdentifier>{ed7f2525-3698-419e-9551-580e4f3bbdc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{6cb7efeb-10de-4289-a458-5bace2702cee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainPCH.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MacroCollection.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="UsingCollection.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketMGR.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP.h">
+      <Filter>Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP_Object.h">
+      <Filter>Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP_Overlapped.h">
+      <Filter>Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionMGR.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvBuffer.h">
+      <Filter>Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="SendBuffer.h">
+      <Filter>Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadMGR.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="TestClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainPCH.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MacroCollection.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingCollection.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketMGR.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP.cpp">
+      <Filter>Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP_Object.cpp">
+      <Filter>Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP_Overlapped.cpp">
+      <Filter>Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionMGR.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvBuffer.cpp">
+      <Filter>Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="SendBuffer.cpp">
+      <Filter>Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadMGR.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="TestClient.cpp" />
+  </ItemGroup>
+</Project>

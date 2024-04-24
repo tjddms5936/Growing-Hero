@@ -1,0 +1,27 @@
+﻿  ChildSessionMGR.cpp
+  ClientPacketHandler.cpp
+C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\GrowingHeroServer\PacketProcessor.h(42,2): warning C4984: 'if constexpr'은 C++17 언어 확장입니다.
+C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\GrowingHeroServer\PacketProcessor.h(25,11): message : 이 진단은 컴파일러 생성 함수 'T PacketProcessor::GetRandomNum(T,T)'에서 수행되었습니다.
+  DungeonRoom.cpp
+  GameSession.cpp
+  GrowingHeroServer.cpp
+  Monster.cpp
+  PacketProcessor.cpp
+C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\GrowingHeroServer\PacketProcessor.h(42,2): warning C4984: 'if constexpr'은 C++17 언어 확장입니다.
+C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\GrowingHeroServer\PacketProcessor.h(25,11): message : 이 진단은 컴파일러 생성 함수 'T PacketProcessor::GetRandomNum(T,T)'에서 수행되었습니다.
+C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\GrowingHeroServer\PacketProcessor.cpp(108,39): warning C4244: '인수': 'uint64_t'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Player.cpp
+  RoomBase.cpp
+  RoomMGR.cpp
+  UnitBase.cpp
+  VilageRoom.cpp
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
+  코드를 생성하고 있습니다.
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 2545 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  GrowingHeroServer.vcxproj -> C:\UnrealProject\GrowingHero 5.2\GrowingHeroServer\Binary\Release\GrowingHeroServer.exe
+  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
