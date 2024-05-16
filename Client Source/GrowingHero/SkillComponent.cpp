@@ -130,8 +130,10 @@ ASkillBase* USkillComponent::SpawnSkill(ESkillNum eSkillNum)
 	if (m_arSkill[(int32)eSkillNum].SkillType == ESkillType::E_SummonsFix)
 	{
 		location = m_pMyController->getMouseLocation();
+		location.Z += 50.f;
 	}
-	ASkillBase* SpawnedSkill = world->SpawnActor<ASkillBase>(m_arSkill[(int)eSkillNum].SpawnSkill.Get(), location, rotator, spawnParams);
+	// ASkillBase* SpawnedSkill = world->SpawnActor<ASkillBase>(m_arSkill[(int)eSkillNum].SpawnSkill.Get(), location, rotator, spawnParams);
+	ASkillBase* SpawnedSkill = Cast<ASkillBase>(world->SpawnActor(m_arSkill[(int)eSkillNum].SpawnSkill, &location));
 	SpawnedSkill->ED_ActivateSuccessful.BindUFunction(this, FName("SkillAnimPlay"));
 	SpawnedSkill->setSkillOwner(m_pOwnerUnit);
 	SpawnedSkill->init(m_arSkill[(int32)eSkillNum].SKill_CurLev, m_arSkill[(int32)eSkillNum].Skill_MP, (int32)eSkillNum);

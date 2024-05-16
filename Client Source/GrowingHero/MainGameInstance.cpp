@@ -66,13 +66,15 @@ void UMainGameInstance::ConnectServer(const FText& NewPlayerName)
 		// 일단 만들고 sessionID는 임의로 0 지정. 연결되면 부여받음
 		m_ServerSession = MakeShared<ServerSession>(Socket);
 		m_ServerSession->init();
-		// 연결되자마자 로그인 한다고 정달하고. OK 떨어지면 Session 만들고 돌리자
 		{
 			Protocol::C_LOGIN pkt;
 
+			// UTF-8 형식으로 변환
 			FString TextString = NewPlayerName.ToString();
 			std::string UTF8String = TCHAR_TO_UTF8(*TextString);
 			pkt.set_playername(UTF8String);
+
+
 
 			TSharedPtr<SendBuffer> sendbuffer = ServerPacketHandler::MakeSendBuffer(pkt);
 			SendPacket(sendbuffer);

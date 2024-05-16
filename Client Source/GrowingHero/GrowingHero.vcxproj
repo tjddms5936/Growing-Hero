@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{61B9FF49-0CFE-46B7-A5E0-AE31E12FA1ED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ai\AIControllerBase.cpp" />
+    <ClCompile Include="ai\BossAIController.cpp" />
+    <ClCompile Include="ai\Decorator_IsInAttackRange.cpp" />
+    <ClCompile Include="ai\Deco_CheckUnitState.cpp" />
+    <ClCompile Include="ai\EnemyAIController.cpp" />
+    <ClCompile Include="ai\Service_Detect.cpp" />
+    <ClCompile Include="ai\SummonAIController.cpp" />
+    <ClCompile Include="ai\Task_AttackTarget.cpp" />
+    <ClCompile Include="ai\Task_FindPatrolPos.cpp" />
+    <ClCompile Include="ai\Tast_SetUnitState.cpp" />
+    <ClCompile Include="CameraTransparencyComponent.cpp" />
+    <ClCompile Include="CombatComponent.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
+    <ClCompile Include="EnemyCharacter.cpp" />
+    <ClCompile Include="EnumCollection.cpp" />
+    <ClCompile Include="EquipItem.cpp" />
+    <ClCompile Include="EquipmentComponent.cpp" />
+    <ClCompile Include="GrowingHero.cpp" />
+    <ClCompile Include="GrowingHeroGameModeBase.cpp" />
+    <ClCompile Include="GrowingHeroSaveGame.cpp" />
+    <ClCompile Include="HotKeyComponent.cpp" />
+    <ClCompile Include="InterfaceProp.cpp" />
+    <ClCompile Include="InterfaceProp_Field.cpp" />
+    <ClCompile Include="InterfaceProp_Inventory.cpp" />
+    <ClCompile Include="interfacesystem\UISC_EnergyControlSystem.cpp" />
+    <ClCompile Include="interfacesystem\UISC_EquipSystem.cpp" />
+    <ClCompile Include="interfacesystem\UISC_MGR.cpp" />
+    <ClCompile Include="interfacesystem\UISC_StatUp.cpp" />
+    <ClCompile Include="interfacesystem\UserInterfaceSystemComponent.cpp" />
+    <ClCompile Include="InventoryComponent.cpp" />
+    <ClCompile Include="MainGameInstance.cpp" />
+    <ClCompile Include="MyCharacter.cpp" />
+    <ClCompile Include="MyCharacterController.cpp" />
+    <ClCompile Include="network\Buffer.cpp" />
+    <ClCompile Include="network\Enum.pb.cc" />
+    <ClCompile Include="network\NetworkThread.cpp" />
+    <ClCompile Include="network\Protocol.pb.cc" />
+    <ClCompile Include="network\ServerPacketHandler.cpp" />
+    <ClCompile Include="network\ServerSession.cpp" />
+    <ClCompile Include="network\Struct.pb.cc" />
+    <ClCompile Include="NPCBase.cpp" />
+    <ClCompile Include="OtherPlayer.cpp" />
+    <ClCompile Include="QuestMGR.cpp" />
+    <ClCompile Include="SkillComponent.cpp" />
+    <ClCompile Include="skill\Buff.cpp" />
+    <ClCompile Include="skill\BuffEffectBase.cpp" />
+    <ClCompile Include="skill\Projectile.cpp" />
+    <ClCompile Include="skill\SkillBase.cpp" />
+    <ClCompile Include="skill\Summoned_Warrior.cpp" />
+    <ClCompile Include="skill\Summons_Fix.cpp" />
+    <ClCompile Include="skill\Summons_Warrior.cpp" />
+    <ClCompile Include="StatComponent.cpp" />
+    <ClCompile Include="StructureCollection.cpp" />
+    <ClCompile Include="umg\InterfaceWithHotKeySlot_Base.cpp" />
+    <ClCompile Include="umg\Interface_Window_Slot.cpp" />
+    <ClCompile Include="umg\UMG_ChatBox.cpp" />
+    <ClCompile Include="umg\UMG_ChatLine.cpp" />
+    <ClCompile Include="umg\UMG_EquipmentFrame.cpp" />
+    <ClCompile Include="umg\UMG_EquipmentSlot.cpp" />
+    <ClCompile Include="umg\UMG_EquipmentWindow.cpp" />
+    <ClCompile Include="umg\UMG_Frame.cpp" />
+    <ClCompile Include="umg\UMG_GameHUD.cpp" />
+    <ClCompile Include="umg\UMG_HotKeySlot.cpp" />
+    <ClCompile Include="umg\UMG_HotKeyWindow.cpp" />
+    <ClCompile Include="umg\UMG_InventoryFrame.cpp" />
+    <ClCompile Include="umg\UMG_InventorySlot.cpp" />
+    <ClCompile Include="umg\UMG_InventoryWindow.cpp" />
+    <ClCompile Include="umg\UMG_Inven_ConsumptionSlot.cpp" />
+    <ClCompile Include="umg\UMG_Inven_EquipmentSlot.cpp" />
+    <ClCompile Include="umg\UMG_MainMenu.cpp" />
+    <ClCompile Include="umg\UMG_SkillFrame.cpp" />
+    <ClCompile Include="umg\UMG_SkillSlot.cpp" />
+    <ClCompile Include="umg\UMG_SkillWindow.cpp" />
+    <ClCompile Include="umg\UMG_StatFrame.cpp" />
+    <ClCompile Include="umg\UMG_StatWindow.cpp" />
+    <ClCompile Include="UnitAnimInstance.cpp" />
+    <ClCompile Include="UnitBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ai\AIControllerBase.h" />
+    <ClInclude Include="ai\BossAIController.h" />
+    <ClInclude Include="ai\Decorator_IsInAttackRange.h" />
+    <ClInclude Include="ai\Deco_CheckUnitState.h" />
+    <ClInclude Include="ai\EnemyAIController.h" />
+    <ClInclude Include="ai\Service_Detect.h" />
+    <ClInclude Include="ai\SummonAIController.h" />
+    <ClInclude Include="ai\Task_AttackTarget.h" />
+    <ClInclude Include="ai\Task_FindPatrolPos.h" />
+    <ClInclude Include="ai\Tast_SetUnitState.h" />
+    <ClInclude Include="CameraTransparencyComponent.h" />
+    <ClInclude Include="CombatComponent.h" />
+    <ClInclude Include="EnemyBoss.h" />
+    <ClInclude Include="EnemyCharacter.h" />
+    <ClInclude Include="EnumCollection.h" />
+    <ClInclude Include="EquipItem.h" />
+    <ClInclude Include="EquipmentComponent.h" />
+    <ClInclude Include="GrowingHero.h" />
+    <ClInclude Include="GrowingHeroGameModeBase.h" />
+    <ClInclude Include="GrowingHeroSaveGame.h" />
+    <ClInclude Include="HotKeyComponent.h" />
+    <ClInclude Include="InterfaceProp.h" />
+    <ClInclude Include="InterfaceProp_Field.h" />
+    <ClInclude Include="InterfaceProp_Inventory.h" />
+    <ClInclude Include="interfacesystem\UISC_EnergyControlSystem.h" />
+    <ClInclude Include="interfacesystem\UISC_EquipSystem.h" />
+    <ClInclude Include="interfacesystem\UISC_MGR.h" />
+    <ClInclude Include="interfacesystem\UISC_StatUp.h" />
+    <ClInclude Include="interfacesystem\UserInterfaceSystemComponent.h" />
+    <ClInclude Include="InventoryComponent.h" />
+    <ClInclude Include="MainGameInstance.h" />
+    <ClInclude Include="MyCharacter.h" />
+    <ClInclude Include="MyCharacterController.h" />
+    <ClInclude Include="network\Buffer.h" />
+    <ClInclude Include="network\Enum.pb.h" />
+    <ClInclude Include="network\NetworkThread.h" />
+    <ClInclude Include="network\Protocol.pb.h" />
+    <ClInclude Include="network\ServerPacketHandler.h" />
+    <ClInclude Include="network\ServerSession.h" />
+    <ClInclude Include="network\Struct.pb.h" />
+    <ClInclude Include="NPCBase.h" />
+    <ClInclude Include="OtherPlayer.h" />
+    <ClInclude Include="QuestMGR.h" />
+    <ClInclude Include="SkillComponent.h" />
+    <ClInclude Include="skill\Buff.h" />
+    <ClInclude Include="skill\BuffEffectBase.h" />
+    <ClInclude Include="skill\Projectile.h" />
+    <ClInclude Include="skill\SkillBase.h" />
+    <ClInclude Include="skill\Summoned_Warrior.h" />
+    <ClInclude Include="skill\Summons_Fix.h" />
+    <ClInclude Include="skill\Summons_Warrior.h" />
+    <ClInclude Include="StatComponent.h" />
+    <ClInclude Include="StructureCollection.h" />
+    <ClInclude Include="umg\InterfaceWithHotKeySlot_Base.h" />
+    <ClInclude Include="umg\Interface_Window_Slot.h" />
+    <ClInclude Include="umg\UMG_ChatBox.h" />
+    <ClInclude Include="umg\UMG_ChatLine.h" />
+    <ClInclude Include="umg\UMG_EquipmentFrame.h" />
+    <ClInclude Include="umg\UMG_EquipmentSlot.h" />
+    <ClInclude Include="umg\UMG_EquipmentWindow.h" />
+    <ClInclude Include="umg\UMG_Frame.h" />
+    <ClInclude Include="umg\UMG_GameHUD.h" />
+    <ClInclude Include="umg\UMG_HotKeySlot.h" />
+    <ClInclude Include="umg\UMG_HotKeyWindow.h" />
+    <ClInclude Include="umg\UMG_InventoryFrame.h" />
+    <ClInclude Include="umg\UMG_InventorySlot.h" />
+    <ClInclude Include="umg\UMG_InventoryWindow.h" />
+    <ClInclude Include="umg\UMG_Inven_ConsumptionSlot.h" />
+    <ClInclude Include="umg\UMG_Inven_EquipmentSlot.h" />
+    <ClInclude Include="umg\UMG_MainMenu.h" />
+    <ClInclude Include="umg\UMG_SkillFrame.h" />
+    <ClInclude Include="umg\UMG_SkillSlot.h" />
+    <ClInclude Include="umg\UMG_SkillWindow.h" />
+    <ClInclude Include="umg\UMG_StatFrame.h" />
+    <ClInclude Include="umg\UMG_StatWindow.h" />
+    <ClInclude Include="UnitAnimInstance.h" />
+    <ClInclude Include="UnitBase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

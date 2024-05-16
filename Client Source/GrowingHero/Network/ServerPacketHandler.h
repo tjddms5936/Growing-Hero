@@ -110,12 +110,19 @@ private:
 		return func(sessionID, pkt);
 	}
 
+#define unused(args) (args)
+	void testFunc(volatile void* parm)
+	{
+		unused(parm);
+	}
+
 	template<typename T>
 	static shared_ptr<SendBuffer> MakeSendBuffer(T& pkt, uint16 pktID)
 	{
 		shared_ptr<SendBuffer> sendBuffer = make_shared<SendBuffer>(4096);
 		// header는 사실상 sendBuffer의 m_Buffer의 시작 주소
 		PacketHeader* header = reinterpret_cast<PacketHeader*>(sendBuffer->GetBuffer());
+		volatile void* test = header;
 		uint16 headersize = sizeof(PacketHeader);
 		header->Packet_Id = pktID;
 		header->PacketSize = static_cast<uint16>(pkt.ByteSizeLong());
