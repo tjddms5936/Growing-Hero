@@ -54,10 +54,8 @@ class TcpSocketUser(User):
 
             # Response time in milliseconds
             total_time = int((time.time() - start_time) * 1000)
-
             header, s_login_response = parse_packet(response_data)
             
-
             if s_login_response.success:
                 events.request.fire(request_type="TCP", name="C_LOGIN", response_time=total_time, response_length=len(response_data), exception=None, context={})
                 print(f"Login Successful, Session ID: {s_login_response.yourSessionID}, Player Name: {s_login_response.playerName}")

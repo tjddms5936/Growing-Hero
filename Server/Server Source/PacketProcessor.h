@@ -2,6 +2,9 @@
 #include "Protocol.pb.h"
 #include <random>
 #include <mutex>
+#include <string>
+#include <codecvt>
+#include <locale>
 
 // 전송받은 패킷들 처리하는 함수 모음 클래스
 class PacketProcessor
@@ -24,7 +27,12 @@ public:
 	template<typename T>
 	static T GetRandomNum(T min, T max);
 
-	
+private:
+	static std::wstring utf8_to_wstring(const std::string& str)
+	{
+		std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+		return converter.from_bytes(str);
+	}
 };
 
 extern PacketProcessor GPktProcessor;
